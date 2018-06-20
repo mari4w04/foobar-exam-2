@@ -1,0 +1,318 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,700");
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  position: relative;
+  margin: 0; }
+
+#dashboard {
+  display: flex;
+  flex-direction: column; }
+
+.bartender-info, .beer-levels, .queue, .storage-info {
+  display: flex; }
+
+.beer-levels {
+  justify-content: center; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+  margin-top: 15px; }
+
+h2 {
+  font-size: 15px; }
+
+.beer-left h2 {
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase; }
+
+.one-status {
+  flex-direction: column;
+  margin-right: 30px; }
+
+.storage-info {
+  flex-wrap: wrap;
+  padding-left: 10px; }
+
+.bar-name {
+  font-weight: 700;
+  font-size: 23px;
+  text-transform: uppercase; }
+
+.time-info {
+  display: flex;
+  margin-top: 5px; }
+
+.vert-line {
+  margin: 0 5px; }
+
+.card {
+  background-color: white;
+  padding: 15px;
+  box-shadow: 0px 0px 40px #bbb9b9; }
+
+.bartender {
+  margin: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px; }
+
+.bartender-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  margin: 0 0 35px 0; }
+
+.all-bartenders {
+  background-color: #00e276;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 1 / 3; }
+
+.card-name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 20px 10px; }
+
+.bartender-name {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 7px; }
+
+.bartender-status {
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.people-served {
+  font-size: 14px;
+  text-align: center; }
+
+.bartender-info {
+  display: flex;
+  justify-content: center;
+  height: 85%;
+  align-items: center; }
+
+.bar-open {
+  color: #00e276;
+  text-transform: uppercase; }
+
+.bar-closed {
+  color: #ff4c2e;
+  text-transform: uppercase; }
+
+.time-info {
+  color: gray; }
+
+.beer-level {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+
+.beer-level-outline {
+  height: 166.66px;
+  border: 1px solid black;
+  position: relative;
+  width: 100%; }
+
+.beer-left {
+  width: 70px;
+  margin: 0 15px; }
+
+.bar-info {
+  margin-bottom: 10px; }
+
+.beers-served {
+  font-size: 120px;
+  color: #00e276;
+  line-height: 1.1em; }
+
+.serving-info h2 {
+  margin: 0;
+  color: #00e276; }
+
+.serving-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-column: 6 / 7; }
+
+.queue div {
+  background-image: url("images/person.svg"); }
+
+.people-in-queue {
+  background-color: #00e276;
+  padding: 10px;
+  margin-bottom: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px; }
+
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative; }
+
+.low-storage progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid #ff4c2e;
+  height: 35px; }
+
+.low-storage progress::-webkit-progress-value {
+  border-radius: 50px;
+  background-color: #ff4c2e; }
+
+.medium-storage progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid #ffb32c;
+  height: 35px; }
+
+.medium-storage progress::-webkit-progress-value {
+  border-radius: 50px;
+  background-color: #ffb32c; }
+
+.high-storage progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 50px;
+  border: 2px solid #00e276;
+  height: 35px; }
+
+.high-storage progress::-webkit-progress-value {
+  border-radius: 50px;
+  background-color: #00e276; }
+
+.storage-warning {
+  margin: 5px 0 20px 0;
+  width: 150px; }
+
+.storage-name {
+  margin-top: 25px;
+  font-size: 15px;
+  text-transform: uppercase; }
+
+progress:before {
+  content: attr(data-label);
+  font-size: 1.2em;
+  position: absolute;
+  text-align: left;
+  top: 5px;
+  left: 10px;
+  right: 0;
+  color: white; }
+
+.storage-warning {
+  text-transform: uppercase;
+  color: #ff4c2e;
+  font-size: 14px;
+  font-weight: 700; }
+
+.hidden {
+  display: none !important; }
+
+.beer-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%; }
+
+.beer-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px; }
+
+.beer-description {
+  margin-right: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column; }
+
+.btn {
+  border: 2px solid #00e276;
+  padding: 8px 10px;
+  border-radius: 50px;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #00e276;
+  margin-top: 10px; }
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.modal-content {
+  width: 60%;
+  display: flex;
+  max-height: 500px; }
+  .modal-content .description {
+    background-color: white;
+    width: 95%;
+    display: flex; }
+    .modal-content .description .category {
+      display: inline;
+      background-color: #ffb32c;
+      padding: 3px 10px;
+      margin-left: 5px;
+      color: white; }
+    .modal-content .description .aroma {
+      margin-top: 20px; }
+    .modal-content .description .aroma, .modal-content .description .overall-impression {
+      line-height: 1.5em; }
+    .modal-content .description .text {
+      padding: 40px; }
+      .modal-content .description .text h2 {
+        font-size: 30px;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0.5em;
+        display: inline; }
+
+.close-btn {
+  background-color: black;
+  color: white;
+  height: 50px;
+  width: 50px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+
+.queue-wrapper {
+  grid-column: 1 / 7; }
+
+.beer-info-wrapper {
+  grid-column: 4 / 7; }
+
+.beer-levels-all {
+  grid-column: 3 / 6; }
+
+.storage-wrapper {
+  grid-column: 1 / 4; }
+
+.modal-img {
+  height: 100%;
+  width: auto; }
+
+.queue-info {
+  margin-left: 10px; }

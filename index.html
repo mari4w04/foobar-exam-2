@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            
+            
+            <div class="description">
+                <img class="modal-img" src="">
+                <div class="text">
+                    <h2>Name of the beer</h2>
+                    <div class="category">Category of the beer</div>
+                    
+                    <!-- Aroma -->
+                    <div class="aroma">Aroma of the beer</div>
+                    <br>
+                    <!-- Overall impression -->
+                    <div class="overall-impression">Overall impression</div>
+                </div>
+            </div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+
+        </div>
+    </div>
+    <div id="dashboard">
+        <div class="bar-info"></div>
+        <div class="cards">
+            <div class="all-bartenders card">
+                <div class="card-name">Bartenders</div>
+                <div class="bartender-info"></div>
+            </div>
+            
+            <div class="beer-levels-all card">
+                <div class="card-name">Tap status</div>
+                <div class="beer-levels"></div>
+            </div>
+            
+
+            <div class="serving-info card"></div>
+
+            <div class="queue-wrapper card"> 
+                <div class="card-name">Current queue</div>
+                <div class="queue-info"></div>
+            </div>
+            
+            <div class="storage-wrapper card">
+                <div class="card-name">Storage</div>
+                <div class="storage-info"></div>
+            </div>
+            
+            <div class="beer-info-wrapper card">
+                <h2 class="card-name">Available beer</h2>
+                <div class="beer-info"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <template id="barInfoTemplate">
+    <!-- Status if the bar is open -->
+        <div class="bar-name"></div>
+        <div class="time-info">
+            <div class="status-board">Is the bar open</div> <span class="vert-line">|</span>
+            <div class="closes-in">Is the bar closes in x hours</div>
+        </div>
+
+    <!-- How many more hours will the bar will be open -->
+    </template>
+
+    <template id="beerInfoTemplate">
+    <!-- Beer catalogue -->
+        <article class="beer-description">
+            <!-- Picture -->
+            <img class="beer-img" src="">
+            <a href="" class="btn">Learn more</a>
+            
+            <!-- Description -->
+            <div class="beer-desc">
+                <!-- Name -->
+                
+            </div>
+        </article>
+    </template>
+
+    
+
+    <template id="beerLevelTemplate">
+    <!-- Capacity bars for beer -->
+        <div class="beer-left">
+            
+            <div class="beer-level-outline">
+                <div class="beer-level"></div>
+            </div>
+            <h2>Name of the beer</h2>
+        </div>
+    </template>
+
+    <template id="bartenderInfoTemplate">
+    <!-- Bartender status -->
+        <div class="bartender">
+            <img src="" alt="" class="bartender-image">
+            <div class="bartender-name">Bartender name</div>
+            <div class="bartender-status">Bartender status</div>
+            <div class="people-served">People served</div>
+            
+        </div>
+    </template>
+    
+    <template id="queueInfoTemplate">
+    <!-- Displaying the queue -->
+        <div class="people-in-queue">People in queue</div>
+        <div class="queue"></div>
+    </template>
+
+    <template id="servingInfoTemplate">
+    <!-- Displaying serving order or queue -->
+        <div class="beers-served">Amount of beers served</div>
+        <h2 class="card-name">Beers served</h2>
+    </template>
+
+    <template id="storageInfoTemplate">
+    <!-- Displaying the queue -->
+        <div class="one-status">
+            
+            <div class="progress-box">
+                <div class="storage-status"><progress max="10" value="" data-label="Hello"></div>
+            </div>
+            <div class="storage-name">Beer name</div>
+            <div class="storage-warning"></div>
+        </div>
+    </template>
+
+    
+    
+    <!-- <script src="http://petlatkea.dk/2018/front/foobar.js"></script> -->
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
